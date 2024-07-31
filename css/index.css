@@ -1,0 +1,38 @@
+ {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0.1em;
+}
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body {
+  color: #333333;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.6;
+  background-color: #d0e1e1;
+  padding-left: 1em;
+  padding-left: 1em;
+  padding-left: 40px;
+  align-content: center;
+}
+p.one {
+  text-indent: 20px;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+h1 {
+  word-spacing: 10px;
+  color: #476b6b;
+  font: 1.2rem "Fira Sans", sans-serif;
+}
+h2 {
+  word-spacing: 10px;
+  color: #476b6b;
+  font: 1.2rem "Fira Sans", sans-serif;
+}

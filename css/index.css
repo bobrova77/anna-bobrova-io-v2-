@@ -1,3 +1,39 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #b1cece;
+  overflow: hidden;
+  font: 1.2rem "Fira Sans", sans-serif;
+  font-weight: bold;
+  width: 95%;
+  position: fixed;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #476b6b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #476b6b;
+  color: #e0ebeb;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e0ebeb;
+  color: #476b6b;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+}
  {
   box-sizing: border-box;
   margin: 0px;
@@ -6,33 +42,86 @@
 }
 div {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-content: flex-start;
+  margin-left: 50px;
 }
 body {
   color: #333333;
   font-family: "Roboto Slab", serif;
   line-height: 1.6;
   background-color: #d0e1e1;
-  padding-left: 1em;
-  padding-left: 1em;
-  padding-left: 40px;
-  align-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 p.one {
-  text-indent: 20px;
+  text-indent: 0px;
+  padding-left: 50px;
 }
 a {
   text-decoration: none;
   color: #333333;
 }
+.container1 {
+  color: #000000;
+  background-color: #b1cece;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+.container2 {
+  color: #000000;
+  background-color: #b1cece;
+  padding: 15px;
+  flex-wrap: wrap;
+  text-indent: 0px;
+  justify-content: flex-start;
+}
+.container3 {
+  color: #000000;
+  background-color: #b1cece;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.container4 {
+  color: #000000;
+  background-color: #b1cece;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.container5 {
+  color: #000000;
+  background-color: #b1cece;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.container6 {
+  color: #000000;
+  padding: 15px;
+  background-color: #b1cece;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
 h1 {
   word-spacing: 10px;
   color: #476b6b;
   font: 1.2rem "Fira Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0px;
+  padding-left: 50px;
 }
 h2 {
   word-spacing: 10px;
   color: #476b6b;
   font: 1.2rem "Fira Sans", sans-serif;
+  font-weight: bold;
+}
+h4 {
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
 }

@@ -17,87 +17,100 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div>
-      <button>Home</button>
-      <button>About</button>
-      <button>Experience</button>
-      <button>Skills</button>
-      <button>Connect</button>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Experience">Experience</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Connect">Connect</a>
     </div>
     <div class="wrap">
       <header>
         <nav id="header">
+          <img src = "Photo CV.png" alt = "Anna B">
           <h1>ANNA BOBROVA</h1>
-          <h4>Web developer| Web designer| Web Technologies</h4>
+          <h4>Web developer | Web designer | Web Technologies</h4>
           <div class="dropdown">
           </div>
         </nav>
       </header>
     </div>
-    <div class="container">
-      <section id="section1">
-        <h2 id="about">About:</h2>
-        <img src = "Photo CV.png" alt = "Anna B">
-        <p class="one">
-          Analytical and detail-oriented professional with a deep passion for
+    <div class="container1">
+      <section id="About">
+        <h2 id="About">About:</h2>
+        <p class="one">Analytical and detail-oriented professional with a deep passion for
         programming and web development. Enthusiastic about process automation
         and solving complex problems. Committed to leveraging proven
         troubleshooting skills to learn and grow within a successful technology
-        company.
-        </p>
-    <section id="Experience">
-      <h2>Experience:</h2>
-      <ui class = "grid-container">
-        <p><strong>April 2024 - Present:</strong> <span class = "years"></span> Code The Dream </span> </p>
-      </ui>
-    </section>
-    <section id = "skills">
-      <h2>Skills:</h2>
-      <ui class = "skillBox">
-        <li>Project1</li>
-        <li>Project2</li>
-        <li>Project3</li>
-      </ui>
-    </section>
-    <section id = "projects">
-      <h2>Projects:</h2>
-      <ul></ul>
-    </section>
-    <section id="Connect">
-      <h2>Connect:</h2>
-      <ui>
-        <li>
-          <i style="font-size: 24px" class="fa">&#xf003;</i>
-          <strong>E-mail:</strong
-          ><a href="mailto:spomandarin@gmail.com"> spomandarin@gmail.com </a>
-        </li>
-        <li>
-          <i style="font-size: 24px" class="fa">&#xf003;</i>
-          <strong>GitHub:</strong
-          ><a href="https://github.com/bobrova77" target="blank">
-            https://github.com/bobrova77
-          </a>
-        </li>
-        <li>
-          <i style="font-size: 24px" class="fa">&#xf003;</i>
-          <strong>LinkedIn:</strong
-          ><a
-            href="https://www.linkedin.com/in/anna-bobrova-qa/"
-            target="_blank"
-          >
-            https://www.linkedin.com/in/anna-bobrova-qa/
-          </a>
-        </li>
-      </ui>
-    </section>
-    <section id = "messagesForm">
-      <h2>Leave a Message:</h2>
-      <form name = "leave_message">
-        <div class = "flex-container">
-          <label class = "flex-name" for = "userName"> Name </label><br>
-            <input type = "text" id = "userName" name = "userNmame" required>
+        company.</p>
+      </section>
+    </div>
+    <div class="container2">
+      <section id="Experience">
+        <h2>Experience:</h2>
+        <div class = "grid-container">
+          <p><strong>April 2024 - Present:</strong> <span class = "years"></span> Code The Dream </span> </p>
         </div>
-      </form>
-    </section>
+      </section>
+    </div>
+    <div class="container3">
+      <section id = "Skills">
+        <h2>Skills:</h2>
+        <ui class = "skillBox">
+          <li>Project1</li>
+          <li>Project2</li>
+          <li>Project3</li>
+        </ui>
+      </section>
+    </div>
+    <div class="container4">
+      <section id = "Projects">
+        <h2>Projects:</h2>
+        <ui class = "grid-container">
+          <li>Project1</li>
+          <li>Project2</li>
+          <li>Project3</li>
+        </ui>
+      </section>
+    </div>
+    <div class="container5">
+      <section id="Connect">
+        <h2>Connect:</h2>
+        <ui>
+          <li>
+            <i style="font-size: 24px" class="fa">&#xf003;</i>
+            <strong>E-mail:</strong><a href="mailto:spomandarin@gmail.com"> spomandarin@gmail.com </a>
+          </li>
+          <li>
+            <i style="font-size: 24px" class="fa">&#xf003;</i>
+            <strong>GitHub:</strong><a href="https://github.com/bobrova77" target="blank"> https://github.com/bobrova77</a>
+          </li>
+          <li>
+            <i style="font-size: 24px" class="fa">&#xf003;</i>
+            <strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/anna-bobrova-qa/" target="_blank"> https://www.linkedin.com/in/anna-bobrova-qa/</a>
+          </li>
+        </ui>
+        </section>
+    </div>
+    <div class="container6">
+      <section id = "messagesForm">
+        <h2>Leave a Message:</h2>
+        <form name = "leave_message">
+          <div class = "flex-container">
+            <label class = "flex-name" for = "userName"> Name </label><br>
+            <input type = "text" id = "userName" name = "userNmame" required>
+          </div>
+          <div class = "flex-container">
+            <label class = "flex-email" for = "userEmail">E-mail</label><br>
+            <input type = "email" id = "userEmail" name = "userEmail" required>
+          </div>
+          <div class = "inputMessage">
+            <label class = "flex-message" for = "userMessage">Message</label><br>
+            <textarea name = "userMessage" id = "userMessage" required></textarea><br>
+          </div>
+        </form>
+      </section>
+    </div>
   </body>
-</html>
+  </html>

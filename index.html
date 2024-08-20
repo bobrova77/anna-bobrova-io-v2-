@@ -12,9 +12,28 @@
       content="Anna Bobrova, Code The Dream, web development, HTML, CSS, Java Script"
     />
     <meta name="author" content="Anna Bobrova" />
-    <meta name="viewport" content="windth=device-windth, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-windth, initial-scale=1.0" />
     <title>Anna Bobrova - Web Developer Portfolio</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <style>
+      @media only screen and (max-width: 600px) {
+        div {
+        box-sizing: border-box;
+      }
+      body {
+        width: 93%;
+        margin: 1em auto;
+        font: 1em/1.2 Arial, Helvetica, sans-serif;
+        background-color: rgb(206, 222, 206);
+      }
+      img {
+        width: 40%;
+        height: auto;
+        margin-top: 60px;
+      }
+      }
+    </style>
   </head>
   <body>
     <div class="topnav">
@@ -31,8 +50,7 @@
           <img src = "Photo CV.png" alt = "Anna B">
           <h1>ANNA BOBROVA</h1>
           <h4>Web developer | Web designer | Web Technologies</h4>
-          <div class="dropdown">
-          </div>
+          <div class="dropdown"></div>
         </nav>
       </header>
     </div>
@@ -49,35 +67,41 @@
     <div class="container2">
       <section id="Experience">
         <h2>Experience:</h2>
-        <div class = "grid-container">
-          <p><strong>April 2024 - Present:</strong> <span class = "years"></span> Code The Dream </span> </p>
-        </div>
+        <p class = "grid-container"><strong>April 2024 - Present:</strong><a href="https://codethedream.org/" target="blank"><span class = "years"></span> Studennt of Code The Dream </span></a></p>
+        <p class = "grid-container"><strong>Dec 2021 - June 2022:</strong><a href="https://practicum.yandex.ru/" target="blank"><span class = "years"></span> 
+          QA Engineer in Yandex Practicum </span> </a></p>
+        <p class = "grid-container"><strong>Jily 2021 - June 2022:</strong><a href="https://practicum.yandex.ru/" target="blank"><span class = "years"></span> 
+          Test automation with Selenium and Python (Stepik Awards 2020 winner) </span> </a></p>
+        <p class = "grid-container"><strong>April 2021 - Dec 2021:</strong><a href="https://stepik.org/cert/1311780?lang=en" target="blank"><span class = "years"></span> 
+          Web Development for Beginners: HTML and CSS (Stepik Awards 2020 winner) </span></a> </p>
+        <p class = "grid-container"><strong>Feb 2021 - Aug 2021:</strong><a href="https://stepik.org/cert/985780?lang=en" target="blank"><span class = "years"></span> 
+          Python Generation: A Course for Beginners (Stepik Awards 2020 winner) </span></a> </p>
       </section>
     </div>
     <div class="container3">
       <section id = "Skills">
         <h2>Skills:</h2>
-        <ui class = "skillBox">
+        <ul class = "skillBox">
           <li>Project1</li>
           <li>Project2</li>
           <li>Project3</li>
-        </ui>
+        </ul>
       </section>
     </div>
     <div class="container4">
       <section id = "Projects">
         <h2>Projects:</h2>
-        <ui class = "grid-container">
+        <ul class = "grid-container">
           <li>Project1</li>
           <li>Project2</li>
           <li>Project3</li>
-        </ui>
+        </ul>
       </section>
     </div>
     <div class="container5">
       <section id="Connect">
         <h2>Connect:</h2>
-        <ui>
+        <ul>
           <li>
             <i style="font-size: 24px" class="fa">&#xf003;</i>
             <strong>E-mail:</strong><a href="mailto:spomandarin@gmail.com"> spomandarin@gmail.com </a>
@@ -90,7 +114,7 @@
             <i style="font-size: 24px" class="fa">&#xf003;</i>
             <strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/anna-bobrova-qa/" target="_blank"> https://www.linkedin.com/in/anna-bobrova-qa/</a>
           </li>
-        </ui>
+        </ul>
         </section>
     </div>
     <div class="container6">

@@ -17,6 +17,14 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/media.css" />
     <style>
+      /* Mobile-first approach */
+      .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+      /* Larger screens */
       @media only screen and (max-width: 600px) {
         div {
         box-sizing: border-box;
@@ -26,11 +34,20 @@
         margin: 1em auto;
         font: 1em/1.2 Arial, Helvetica, sans-serif;
         background-color: rgb(206, 222, 206);
+        border-radius: 10px;
       }
       img {
         width: 40%;
         height: auto;
         margin-top: 60px;
+        border-radius: 50%;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
       }
       }
     </style>
@@ -70,7 +87,7 @@
         <p class = "grid-container"><strong>April 2024 - Present:</strong><a href="https://codethedream.org/" target="blank"><span class = "years"></span> Studennt of Code The Dream </span></a></p>
         <p class = "grid-container"><strong>Dec 2021 - June 2022:</strong><a href="https://practicum.yandex.ru/" target="blank"><span class = "years"></span> 
           QA Engineer in Yandex Practicum </span> </a></p>
-        <p class = "grid-container"><strong>Jily 2021 - June 2022:</strong><a href="https://practicum.yandex.ru/" target="blank"><span class = "years"></span> 
+        <p class = "grid-container"><strong>July 2021 - June 2022:</strong><a href="https://practicum.yandex.ru/" target="blank"><span class = "years"></span> 
           Test automation with Selenium and Python (Stepik Awards 2020 winner) </span> </a></p>
         <p class = "grid-container"><strong>April 2021 - Dec 2021:</strong><a href="https://stepik.org/cert/1311780?lang=en" target="blank"><span class = "years"></span> 
           Web Development for Beginners: HTML and CSS (Stepik Awards 2020 winner) </span></a> </p>
@@ -80,11 +97,15 @@
     </div>
     <div class="container3">
       <section id = "Skills">
-        <h2>Skills:</h2>
-        <ul class = "skillBox">
-          <li>Project1</li>
-          <li>Project2</li>
-          <li>Project3</li>
+        <h2 id="skills">Skills:</h2>
+        <ul class = "SkillBox">
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>GitHub</li>
+          <li>Figma</li>
+          <li>API</li>
         </ul>
       </section>
     </div>
@@ -111,8 +132,9 @@
             <strong>GitHub:</strong><a href="https://github.com/bobrova77" target="blank"> https://github.com/bobrova77</a>
           </li>
           <li>
-            <i style="font-size: 24px" class="fa">&#xf003;</i>
-            <strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/anna-bobrova-qa/" target="_blank"> https://www.linkedin.com/in/anna-bobrova-qa/</a>
+            <i style="font-size: 24px" class="linkedin">&#xf003;</i>
+            <strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/anna-bobrova-qa/" target="_blank"> https://www.linkedin.com/in/anna-bobrova-qa/
+            </a>
           </li>
         </ul>
         </section>
@@ -123,7 +145,7 @@
         <form name = "leave_message">
           <div class = "flex-container">
             <label class = "flex-name" for = "userName"> Name </label><br>
-            <input type = "text" id = "userName" name = "userNmame" required>
+            <input type = "text" id = "userName" name = "userName" required>
           </div>
           <div class = "flex-container">
             <label class = "flex-email" for = "userEmail">E-mail</label><br>
@@ -136,5 +158,6 @@
         </form>
       </section>
     </div>
+    <script src=".js/index.js"></script>
   </body>
   </html>

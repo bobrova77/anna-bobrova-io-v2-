@@ -27,6 +27,7 @@
   background-color: #e0ebeb;
   color: #476b6b;
 }
+/* Image Styling*/
 img {
   margin-top: 60px;
   display: block;
@@ -35,6 +36,7 @@ img {
   width: 50%;
   border-radius: 40%;
 }
+/* General Layout*/
 div {
   display: flex;
   justify-content: space-around;
@@ -44,16 +46,19 @@ body {
   background-color: #d0e1e1;
   padding-right: 10px;
 }
+/* Paragraph Styling */
 p.one {
   text-indent: 0px;
   padding-left: 40px;
 }
+/* Container1 Styling */
 .container1 {
   color: #000000;
   background-color: #b1cece;
   padding: 15px;
   flex-wrap: wrap;
 }
+/* Grid Container*/
 .grid-container {
   display: block;
   padding: 0.75rem;
@@ -62,6 +67,7 @@ p.one {
   border-radius: 10px;
   color: #333333;
 }
+/* Container2 Styling */
 .container2 {
   color: #000000;
   background-color: #b1cece;
@@ -70,6 +76,7 @@ p.one {
   text-indent: 0px;
   justify-content: flex-start;
 }
+/* Container3 Styling */
 .container3 {
   color: #000000;
   background-color: #b1cece;
@@ -77,6 +84,7 @@ p.one {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+/* Container4 Styling */
 .container4 {
   color: #000000;
   background-color: #b1cece;
@@ -84,6 +92,7 @@ p.one {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+/* Container5 Styling */
 .container5 {
   color: #000000;
   background-color: #b1cece;
@@ -91,6 +100,7 @@ p.one {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+/* Container6 Styling */
 .container6 {
   color: #000000;
   padding: 15px;
@@ -98,6 +108,7 @@ p.one {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+/* Headings*/
 h1 {
   word-spacing: 10px;
   color: #476b6b;
@@ -117,4 +128,10 @@ h4 {
   color: #000000;
   text-align: center;
   font-weight: bold;
+}
+
+#linkedinLogo {
+  display: block;
+  max-width: 75%;
+  height: auto;
 }

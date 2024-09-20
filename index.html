@@ -12,10 +12,9 @@
       content="Anna Bobrova, Code The Dream, web development, HTML, CSS, Java Script"
     />
     <meta name="author" content="Anna Bobrova" />
-    <meta name="viewport" content="width=device-windth, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anna Bobrova - Web Developer Portfolio</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/media.css" />
     <style>
       /* Mobile-first approach */
       .container {
@@ -49,7 +48,7 @@
         border-radius: 8px;
         box-sizing: border-box;
       }
-      }
+    }
     </style>
   </head>
   <body>
@@ -73,7 +72,7 @@
     </div>
     <div class="container1">
       <section id="About">
-        <h2 id="About">About:</h2>
+        <h2 id="About">About</h2>
         <p class="one">Analytical and detail-oriented professional with a deep passion for
         programming and web development. Enthusiastic about process automation
         and solving complex problems. Committed to leveraging proven
@@ -83,7 +82,7 @@
     </div>
     <div class="container2">
       <section id="Experience">
-        <h2>Experience:</h2>
+        <h2>Experience</h2>
         <p class = "grid-container"><strong>April 2024 - Present:</strong><a href="https://codethedream.org/" target="blank"><span class = "years"></span> Studennt of Code The Dream </span></a></p>
         <p class = "grid-container"><strong>Dec 2021 - June 2022:</strong><a href="https://practicum.yandex.ru/" target="blank"><span class = "years"></span> 
           QA Engineer in Yandex Practicum </span> </a></p>
@@ -96,43 +95,31 @@
       </section>
     </div>
     <div class="container3">
-      <section id = "Skills">
-        <h2 id="skills">Skills:</h2>
-        <ul class = "SkillBox">
-          <li>Python</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>GitHub</li>
-          <li>Figma</li>
-          <li>API</li>
-        </ul>
+      <section id = "skills">
+        <h2 id="skills">Skills</h2>
+        </ul><ul class = "SkillBox"></ul>
       </section>
     </div>
     <div class="container4">
-      <section id = "Projects">
-        <h2>Projects:</h2>
-        <ul class = "grid-container">
-          <li>Project1</li>
-          <li>Project2</li>
-          <li>Project3</li>
-        </ul>
+      <section id = "projects">
+        <h2>Projects</h2>
+        <ul><ul class = "ProjectsBox"></ul>
       </section>
     </div>
     <div class="container5">
       <section id="Connect">
-        <h2>Connect:</h2>
+        <h2>Connect</h2>
         <ul>
           <li>
-            <i style="font-size: 24px" class="fa">&#xf003;</i>
+            <i style="font-size: 24px"></i>
             <strong>E-mail:</strong><a href="mailto:spomandarin@gmail.com"> spomandarin@gmail.com </a>
           </li>
           <li>
-            <i style="font-size: 24px" class="fa">&#xf003;</i>
+            <i style="font-size: 24px"></i>
             <strong>GitHub:</strong><a href="https://github.com/bobrova77" target="blank"> https://github.com/bobrova77</a>
           </li>
           <li>
-            <i style="font-size: 24px" class="linkedin">&#xf003;</i>
+            <i style="font-size: 24px"></i>
             <strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/anna-bobrova-qa/" target="_blank"> https://www.linkedin.com/in/anna-bobrova-qa/
             </a>
           </li>
@@ -140,23 +127,21 @@
         </section>
     </div>
     <div class="container6">
-      <section id = "messagesForm">
-        <h2>Leave a Message:</h2>
-        <form name = "leave_message">
-          <div class = "flex-container">
-            <label class = "flex-name" for = "userName"> Name </label><br>
-            <input type = "text" id = "userName" name = "userName" required>
-          </div>
-          <div class = "flex-container">
-            <label class = "flex-email" for = "userEmail">E-mail</label><br>
-            <input type = "email" id = "userEmail" name = "userEmail" required>
-          </div>
-          <div class = "inputMessage">
-            <label class = "flex-message" for = "userMessage">Message</label><br>
-            <textarea name = "userMessage" id = "userMessage" required></textarea><br>
-          </div>
-          <button type = "submit">Submit</button>
+      <section id = "message-form-section">
+        <h2>Leave a Message</h2>
+        <form name = "leave_message" class = "message-form">
+          <label for="usersName">Name:</label>
+          <input type="text" id="usersName" name="usersName" required="true"/><br />
+          <label for="usersEmail">Email:</label>
+          <input type="email" id="usersEmail" name="usersEmail" required="true"/><br />
+          <label for="usersMessage">Message:</label>
+          <textarea name="usersMessage" id="usersMessage" required="true"></textarea><br />
+          <button class="bubbly-button" type="submit" value="submit" name="submit" class="submit-button">Submit</button>
         </form>
+      </section>
+      <section id="message-section" hidden>
+        <h2>Messages</h2>
+        <ul id="messages"></ul>
       </section>
     </div>
     <script src="js/index.js"></script>

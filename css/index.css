@@ -4,7 +4,7 @@
   overflow: hidden;
   font: 1.2rem "Fira Sans", sans-serif;
   font-weight: bold;
-  width: 97.5%;
+  width: 97%;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -18,7 +18,11 @@
   text-decoration: none;
   font-size: 17px;
 }
-
+#name {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  padding-top: 0.5ch;
+}
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #476b6b;
@@ -47,7 +51,19 @@ div {
 }
 body {
   background-color: #d0e1e1;
-  padding-right: 10px;
+  color: black;
+  padding-left: 0.7em;
+  height: 100vh;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+body.light-theme {
+  background-color: #fff;
+  color: #000;
 }
 /* Paragraph Styling */
 p.one {

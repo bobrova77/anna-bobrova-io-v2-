@@ -173,3 +173,14 @@ fetch(`https://api.github.com/users/bobrova77/repos`)
   .catch((error) => {
     console.error("Error fetching data: ", error.message);
   });
+
+// Get query string
+const urlParams = new URLSearchParams(window.location.search);
+const theme = urlParams.get("theme");
+
+// Apply the theme if it's present
+if (theme === "dark") {
+  document.body.classList.add("dark-theme");
+} else if (theme === "light") {
+  document.body.classList.add("light-theme");
+}

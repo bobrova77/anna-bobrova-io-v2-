@@ -48,6 +48,11 @@
         border-radius: 8px;
         box-sizing: border-box;
       }
+      .topnav {
+        width: 92%;
+        font: 1rem "Fira Sans", sans-serif;
+        z-index: 9999;
+      }
     }
     </style>
   </head>
@@ -64,7 +69,7 @@
       <header>
         <nav id="header">
           <img src = "Photo CV.png" alt = "Anna B">
-          <h1>ANNA BOBROVA</h1>
+          <h1 id="name">ANNA BOBROVA</h1>
           <h4>Web developer | Web designer | Web Technologies</h4>
           <div class="dropdown"></div>
         </nav>
@@ -121,7 +126,7 @@
           <li>
             <i style="font-size: 24px"></i>
             <strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/anna-bobrova-qa/" target="_blank"> https://www.linkedin.com/in/anna-bobrova-qa/
-            </a>
+              </a>
           </li>
         </ul>
         </section>
@@ -145,5 +150,6 @@
       </section>
     </div>
     <script src="js/index.js"></script>
+    <script src="theme.js"></script>
   </body>
   </html>
